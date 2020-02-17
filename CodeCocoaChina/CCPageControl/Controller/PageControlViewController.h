@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  PageControlViewController.h
 //  CodeCocoaChina
 //
 //  Created by Mr.TF on 2020/2/17.
@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+NS_ASSUME_NONNULL_BEGIN
 
+@interface PageControlViewController : UIViewController
 
 @end
 
+NS_ASSUME_NONNULL_END
