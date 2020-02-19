@@ -43,9 +43,8 @@ static NSString *reuseIdentifier = @"PageControlCollectionViewCell";
     self.collectionV.pagingEnabled=YES;
     self.collectionV.bounces=NO;
     self.collectionV.showsVerticalScrollIndicator=NO;
-    self.collectionV.showsHorizontalScrollIndicator=NO;
+    self.collectionV.showsHorizontalScrollIndicator=YES;
     [self.collectionV registerClass:[PageControllerCollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
-    
     self.pageV.frame=CGRectMake(0, 0, self.frame.size.width, self.frame.size.height*0.1);
     self.pageV.center=CGPointMake(self.frame.size.width/2, self.frame.size.height - self.pageV.frame.size.height/2);
     self.pageV.numberOfPages=[self.imageArr count];
@@ -57,25 +56,22 @@ static NSString *reuseIdentifier = @"PageControlCollectionViewCell";
     self.btn.center=CGPointMake(self.frame.size.width/2, self.pageV.frame.origin.y - self.btn.frame.size.height/2);
     //self.btn.hidden=YES;
     self.btn.backgroundColor=[UIColor redColor];
-    self.btn.backgroundColor = [UIColor clearColor];
+    //self.btn.backgroundColor = [UIColor clearColor];
     self.btn.layer.masksToBounds=YES;
     self.btn.layer.cornerRadius=self.btn.frame.size.height/2;
     self.btn.layer.borderWidth=1.0;
-    
     self.btn.layer.borderColor=[UIColor whiteColor].CGColor;
-    [self.btn addTarget:self action:@selector(buttonBackGroundHighlighted:) forControlEvents:UIControlEventTouchDown];
-    [self.btn addTarget:self action:@selector(removeViewBtn:) forControlEvents:UIControlEventTouchUpInside];
+    [self.btn addTarget:self action:@selector(removeViewBtn) forControlEvents:UIControlEventTouchDown];
     [self.btn setTitle:@"开始体验" forState:UIControlStateNormal];
     
 }
-- (void)buttonBackGroundHighlighted:(UIButton *)sender
+
+-(void)removeViewBtn
 {
-    sender.backgroundColor = [UIColor redColor];
-}
--(void)removeViewBtn:(UIButton *)sender
-{
-    sender.backgroundColor = [UIColor clearColor];
-    [self removeFromSuperview];
+   if([self.delegate respondsToSelector:@selector(StarNewSegment:)])
+    {
+        [self.delegate StarNewSegment:self.btn];
+    }
 }
 -(void)btnHidden:(UIButton *)btn
 {
@@ -130,7 +126,8 @@ static NSString *reuseIdentifier = @"PageControlCollectionViewCell";
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
     
-    if ((scrollView.contentOffset.x/self.frame.size.width)==self.imageArr.count-1){
+    if ((scrollView.contentOffset.y/self.frame.size.height)==self.imageArr.count-1){
+        
         [self performSelector:@selector(btnHidden:) withObject:self.btn afterDelay:kAfterDelayTime];
     }
     else
@@ -143,4 +140,15 @@ static NSString *reuseIdentifier = @"PageControlCollectionViewCell";
     int page = scrollView.contentOffset.y / scrollView.frame.size.height;
     self.pageV.currentPage = page;
 }
+/*-(void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    CGPoint offset=scrollView.contentOffset;
+    self.pagecontrol.currentPage=offset.x/s_width;
+}
+- (IBAction)changepage:(id)sender {
+    [UIView animateWithDuration:0.3f animations:^{
+        NSInteger whichpage=self.pagecontrol.currentPage;
+        self.scrollcontrol.contentOffset=CGPointMake(s_width*whichpage, 0);
+    }];
+}*/
 @end

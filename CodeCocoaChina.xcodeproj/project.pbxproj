@@ -23,6 +23,9 @@
 		8B8C680223FAAE2400F436B3 /* PageControllerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8C680123FAAE2400F436B3 /* PageControllerView.m */; };
 		8B8C680623FAAF4800F436B3 /* PageController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B8C680523FAAF4800F436B3 /* PageController.xib */; };
 		8B8C680923FAD4E800F436B3 /* PageControlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8C680823FAD4E800F436B3 /* PageControlViewController.m */; };
+		8B8C680C23FBAE5F00F436B3 /* SegmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8C680B23FBAE5F00F436B3 /* SegmentViewController.m */; };
+		8B8C680F23FBAF6200F436B3 /* SegmentControllerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8C680E23FBAF6200F436B3 /* SegmentControllerView.m */; };
+		8B8C681123FBAF7100F436B3 /* SegmentControllerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B8C681023FBAF7100F436B3 /* SegmentControllerView.xib */; };
 		C3A955A9AC18EC85A9EEA0D7 /* Pods_CodeCocoaChina.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 373DC27EABDBA359F3D6B3A4 /* Pods_CodeCocoaChina.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +56,11 @@
 		8B8C680523FAAF4800F436B3 /* PageController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PageController.xib; sourceTree = "<group>"; };
 		8B8C680723FAD4E800F436B3 /* PageControlViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PageControlViewController.h; sourceTree = "<group>"; };
 		8B8C680823FAD4E800F436B3 /* PageControlViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PageControlViewController.m; sourceTree = "<group>"; };
+		8B8C680A23FBAE5F00F436B3 /* SegmentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SegmentViewController.h; sourceTree = "<group>"; };
+		8B8C680B23FBAE5F00F436B3 /* SegmentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SegmentViewController.m; sourceTree = "<group>"; };
+		8B8C680D23FBAF6200F436B3 /* SegmentControllerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SegmentControllerView.h; sourceTree = "<group>"; };
+		8B8C680E23FBAF6200F436B3 /* SegmentControllerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SegmentControllerView.m; sourceTree = "<group>"; };
+		8B8C681023FBAF7100F436B3 /* SegmentControllerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SegmentControllerView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +157,9 @@
 				8B8C680023FAAE2400F436B3 /* PageControllerView.h */,
 				8B8C680123FAAE2400F436B3 /* PageControllerView.m */,
 				8B8C680523FAAF4800F436B3 /* PageController.xib */,
+				8B8C680D23FBAF6200F436B3 /* SegmentControllerView.h */,
+				8B8C680E23FBAF6200F436B3 /* SegmentControllerView.m */,
+				8B8C681023FBAF7100F436B3 /* SegmentControllerView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -158,6 +169,8 @@
 			children = (
 				8B8C680723FAD4E800F436B3 /* PageControlViewController.h */,
 				8B8C680823FAD4E800F436B3 /* PageControlViewController.m */,
+				8B8C680A23FBAE5F00F436B3 /* SegmentViewController.h */,
+				8B8C680B23FBAE5F00F436B3 /* SegmentViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -237,6 +250,7 @@
 				8B8C67EE23FA859B00F436B3 /* 1.JPG in Resources */,
 				8B8C67F223FA85B700F436B3 /* 3.JPG in Resources */,
 				8B8C67FF23FAAD7C00F436B3 /* PageControllerCollectionViewCell.xib in Resources */,
+				8B8C681123FBAF7100F436B3 /* SegmentControllerView.xib in Resources */,
 				8B8C67F423FA85C800F436B3 /* 4.JPG in Resources */,
 				8B8C67E023FA7A9000F436B3 /* Assets.xcassets in Resources */,
 				8B8C67DE23FA7A8C00F436B3 /* Main.storyboard in Resources */,
@@ -292,9 +306,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B8C680C23FBAE5F00F436B3 /* SegmentViewController.m in Sources */,
 				8B8C67FE23FAAD7C00F436B3 /* PageControllerCollectionViewCell.m in Sources */,
 				8B8C67D523FA7A8C00F436B3 /* AppDelegate.m in Sources */,
 				8B8C67E623FA7A9000F436B3 /* main.m in Sources */,
+				8B8C680F23FBAF6200F436B3 /* SegmentControllerView.m in Sources */,
 				8B8C67D823FA7A8C00F436B3 /* SceneDelegate.m in Sources */,
 				8B8C680923FAD4E800F436B3 /* PageControlViewController.m in Sources */,
 				8B8C680223FAAE2400F436B3 /* PageControllerView.m in Sources */,

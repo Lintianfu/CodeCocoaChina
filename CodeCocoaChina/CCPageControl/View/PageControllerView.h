@@ -9,10 +9,17 @@
 #import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
+@protocol PageViewDelegate <NSObject>
+@optional
+-(void)StarNewSegment:(UIButton *)button;
+@end
 
 @interface PageControllerView : UIView
 - (instancetype)initWithFrame:(CGRect)frame andImageList:(NSArray *)arr;
 +(PageControllerView *)instance;
+
+@property(weak,nonatomic)id<PageViewDelegate>delegate;
+
 @end
 
 NS_ASSUME_NONNULL_END

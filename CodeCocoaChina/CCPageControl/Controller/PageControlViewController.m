@@ -8,7 +8,8 @@
 
 #import "PageControlViewController.h"
 #import "PageControllerView.h"
-@interface PageControlViewController ()
+#import "SegmentViewController.h"
+@interface PageControlViewController ()<PageViewDelegate>
 @property(nonatomic,strong)PageControllerView *pageControlV;
 @property(nonatomic,strong)NSArray *imageArr;
 @end
@@ -17,9 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSLog(@"PageControl");
     [self.view addSubview:self.pageControlV];
-    // Do any additional setup after loading the view.
 }
 -(NSArray *)imageArr
 {
@@ -33,12 +32,17 @@
 {
     if (!_pageControlV) {
         _pageControlV=[[PageControllerView instance]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) andImageList:self.imageArr];
+        self.pageControlV.delegate=self;
     }
     return _pageControlV;
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+-(void)StarNewSegment:(UIButton *)button
+{
+    [self.navigationController pushViewController:[[SegmentViewController alloc]init] animated:NO];
 }
 
 
