@@ -26,6 +26,13 @@
 		8B8C680C23FBAE5F00F436B3 /* SegmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8C680B23FBAE5F00F436B3 /* SegmentViewController.m */; };
 		8B8C680F23FBAF6200F436B3 /* SegmentControllerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8C680E23FBAF6200F436B3 /* SegmentControllerView.m */; };
 		8B8C681123FBAF7100F436B3 /* SegmentControllerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B8C681023FBAF7100F436B3 /* SegmentControllerView.xib */; };
+		8B8C681723FCE70600F436B3 /* yunEr1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8B8C681623FCE70600F436B3 /* yunEr1.jpg */; };
+		8B8C681923FCE70D00F436B3 /* yunEr2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8B8C681823FCE70D00F436B3 /* yunEr2.jpg */; };
+		8B8C681B23FCE71300F436B3 /* yunEr3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8B8C681A23FCE71300F436B3 /* yunEr3.jpg */; };
+		8B8C681D23FCE71900F436B3 /* yunEr4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8B8C681C23FCE71900F436B3 /* yunEr4.jpg */; };
+		8B8C681F23FCE71D00F436B3 /* yunEr5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8B8C681E23FCE71D00F436B3 /* yunEr5.jpg */; };
+		8B8C682223FD01FA00F436B3 /* FlowCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8C682123FD01FA00F436B3 /* FlowCollectionViewCell.m */; };
+		8B8C682523FE2A3E00F436B3 /* FlowChangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8C682423FE2A3E00F436B3 /* FlowChangeViewController.m */; };
 		C3A955A9AC18EC85A9EEA0D7 /* Pods_CodeCocoaChina.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 373DC27EABDBA359F3D6B3A4 /* Pods_CodeCocoaChina.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +68,15 @@
 		8B8C680D23FBAF6200F436B3 /* SegmentControllerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SegmentControllerView.h; sourceTree = "<group>"; };
 		8B8C680E23FBAF6200F436B3 /* SegmentControllerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SegmentControllerView.m; sourceTree = "<group>"; };
 		8B8C681023FBAF7100F436B3 /* SegmentControllerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SegmentControllerView.xib; sourceTree = "<group>"; };
+		8B8C681623FCE70600F436B3 /* yunEr1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yunEr1.jpg; sourceTree = "<group>"; };
+		8B8C681823FCE70D00F436B3 /* yunEr2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yunEr2.jpg; sourceTree = "<group>"; };
+		8B8C681A23FCE71300F436B3 /* yunEr3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yunEr3.jpg; sourceTree = "<group>"; };
+		8B8C681C23FCE71900F436B3 /* yunEr4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yunEr4.jpg; sourceTree = "<group>"; };
+		8B8C681E23FCE71D00F436B3 /* yunEr5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yunEr5.jpg; sourceTree = "<group>"; };
+		8B8C682023FD01FA00F436B3 /* FlowCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlowCollectionViewCell.h; sourceTree = "<group>"; };
+		8B8C682123FD01FA00F436B3 /* FlowCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlowCollectionViewCell.m; sourceTree = "<group>"; };
+		8B8C682323FE2A3E00F436B3 /* FlowChangeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlowChangeViewController.h; sourceTree = "<group>"; };
+		8B8C682423FE2A3E00F436B3 /* FlowChangeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlowChangeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +120,7 @@
 		8B8C67D223FA7A8C00F436B3 /* CodeCocoaChina */ = {
 			isa = PBXGroup;
 			children = (
+				8B8C681223FCE39000F436B3 /* RCChangeFlowLayout */,
 				8B8C67F723FA874600F436B3 /* CCPageControl */,
 				8B8C67EC23FA857200F436B3 /* images */,
 				8B8C67D323FA7A8C00F436B3 /* AppDelegate.h */,
@@ -122,6 +139,11 @@
 		8B8C67EC23FA857200F436B3 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				8B8C681623FCE70600F436B3 /* yunEr1.jpg */,
+				8B8C681823FCE70D00F436B3 /* yunEr2.jpg */,
+				8B8C681A23FCE71300F436B3 /* yunEr3.jpg */,
+				8B8C681C23FCE71900F436B3 /* yunEr4.jpg */,
+				8B8C681E23FCE71D00F436B3 /* yunEr5.jpg */,
 				8B8C67ED23FA859B00F436B3 /* 1.JPG */,
 				8B8C67EF23FA85A700F436B3 /* 2.JPG */,
 				8B8C67F123FA85B700F436B3 /* 3.JPG */,
@@ -173,6 +195,41 @@
 				8B8C680B23FBAE5F00F436B3 /* SegmentViewController.m */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		8B8C681223FCE39000F436B3 /* RCChangeFlowLayout */ = {
+			isa = PBXGroup;
+			children = (
+				8B8C681523FCE3CB00F436B3 /* View */,
+				8B8C681423FCE3C100F436B3 /* Model */,
+				8B8C681323FCE3B500F436B3 /* Controller */,
+			);
+			path = RCChangeFlowLayout;
+			sourceTree = "<group>";
+		};
+		8B8C681323FCE3B500F436B3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8B8C682323FE2A3E00F436B3 /* FlowChangeViewController.h */,
+				8B8C682423FE2A3E00F436B3 /* FlowChangeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8B8C681423FCE3C100F436B3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8B8C681523FCE3CB00F436B3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8B8C682023FD01FA00F436B3 /* FlowCollectionViewCell.h */,
+				8B8C682123FD01FA00F436B3 /* FlowCollectionViewCell.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		D277946F98FFD9732F028ACB /* Pods */ = {
@@ -243,6 +300,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B8C681D23FCE71900F436B3 /* yunEr4.jpg in Resources */,
+				8B8C681F23FCE71D00F436B3 /* yunEr5.jpg in Resources */,
 				8B8C680623FAAF4800F436B3 /* PageController.xib in Resources */,
 				8B8C67F023FA85A700F436B3 /* 2.JPG in Resources */,
 				8B8C67F623FA85D200F436B3 /* 5.JPG in Resources */,
@@ -252,6 +311,9 @@
 				8B8C67FF23FAAD7C00F436B3 /* PageControllerCollectionViewCell.xib in Resources */,
 				8B8C681123FBAF7100F436B3 /* SegmentControllerView.xib in Resources */,
 				8B8C67F423FA85C800F436B3 /* 4.JPG in Resources */,
+				8B8C681923FCE70D00F436B3 /* yunEr2.jpg in Resources */,
+				8B8C681723FCE70600F436B3 /* yunEr1.jpg in Resources */,
+				8B8C681B23FCE71300F436B3 /* yunEr3.jpg in Resources */,
 				8B8C67E023FA7A9000F436B3 /* Assets.xcassets in Resources */,
 				8B8C67DE23FA7A8C00F436B3 /* Main.storyboard in Resources */,
 			);
@@ -310,7 +372,9 @@
 				8B8C67FE23FAAD7C00F436B3 /* PageControllerCollectionViewCell.m in Sources */,
 				8B8C67D523FA7A8C00F436B3 /* AppDelegate.m in Sources */,
 				8B8C67E623FA7A9000F436B3 /* main.m in Sources */,
+				8B8C682223FD01FA00F436B3 /* FlowCollectionViewCell.m in Sources */,
 				8B8C680F23FBAF6200F436B3 /* SegmentControllerView.m in Sources */,
+				8B8C682523FE2A3E00F436B3 /* FlowChangeViewController.m in Sources */,
 				8B8C67D823FA7A8C00F436B3 /* SceneDelegate.m in Sources */,
 				8B8C680923FAD4E800F436B3 /* PageControlViewController.m in Sources */,
 				8B8C680223FAAE2400F436B3 /* PageControllerView.m in Sources */,
