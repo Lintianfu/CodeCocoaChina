@@ -33,6 +33,11 @@
 		8B8C681F23FCE71D00F436B3 /* yunEr5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8B8C681E23FCE71D00F436B3 /* yunEr5.jpg */; };
 		8B8C682223FD01FA00F436B3 /* FlowCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8C682123FD01FA00F436B3 /* FlowCollectionViewCell.m */; };
 		8B8C682523FE2A3E00F436B3 /* FlowChangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8C682423FE2A3E00F436B3 /* FlowChangeViewController.m */; };
+		8B8C682C23FFBDB500F436B3 /* GesturePassword.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8C682B23FFBDB500F436B3 /* GesturePassword.m */; };
+		8B8C682F23FFBE8700F436B3 /* GesturePasswordCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8C682E23FFBE8700F436B3 /* GesturePasswordCell.m */; };
+		8B8C683823FFC34300F436B3 /* GesturePasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8C683723FFC34300F436B3 /* GesturePasswordViewController.m */; };
+		8B8C683D24000A2800F436B3 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8C683C24000A2800F436B3 /* LoginViewController.m */; };
+		8B8C683E2400171F00F436B3 /* register_guide_video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8B8C683A2400090400F436B3 /* register_guide_video.mp4 */; };
 		C3A955A9AC18EC85A9EEA0D7 /* Pods_CodeCocoaChina.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 373DC27EABDBA359F3D6B3A4 /* Pods_CodeCocoaChina.framework */; };
 /* End PBXBuildFile section */
 
@@ -77,6 +82,15 @@
 		8B8C682123FD01FA00F436B3 /* FlowCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlowCollectionViewCell.m; sourceTree = "<group>"; };
 		8B8C682323FE2A3E00F436B3 /* FlowChangeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlowChangeViewController.h; sourceTree = "<group>"; };
 		8B8C682423FE2A3E00F436B3 /* FlowChangeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlowChangeViewController.m; sourceTree = "<group>"; };
+		8B8C682A23FFBDB500F436B3 /* GesturePassword.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GesturePassword.h; sourceTree = "<group>"; };
+		8B8C682B23FFBDB500F436B3 /* GesturePassword.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GesturePassword.m; sourceTree = "<group>"; };
+		8B8C682D23FFBE8700F436B3 /* GesturePasswordCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GesturePasswordCell.h; sourceTree = "<group>"; };
+		8B8C682E23FFBE8700F436B3 /* GesturePasswordCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GesturePasswordCell.m; sourceTree = "<group>"; };
+		8B8C683623FFC34300F436B3 /* GesturePasswordViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GesturePasswordViewController.h; sourceTree = "<group>"; };
+		8B8C683723FFC34300F436B3 /* GesturePasswordViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GesturePasswordViewController.m; sourceTree = "<group>"; };
+		8B8C683A2400090400F436B3 /* register_guide_video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = register_guide_video.mp4; sourceTree = "<group>"; };
+		8B8C683B24000A2800F436B3 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		8B8C683C24000A2800F436B3 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,9 +134,11 @@
 		8B8C67D223FA7A8C00F436B3 /* CodeCocoaChina */ = {
 			isa = PBXGroup;
 			children = (
+				8B8C682623FFBD4800F436B3 /* GesturePasswordLogin */,
 				8B8C681223FCE39000F436B3 /* RCChangeFlowLayout */,
 				8B8C67F723FA874600F436B3 /* CCPageControl */,
-				8B8C67EC23FA857200F436B3 /* images */,
+				8B8C6839240008DB00F436B3 /* Resources */,
+				8B8C67EC23FA857200F436B3 /* Images */,
 				8B8C67D323FA7A8C00F436B3 /* AppDelegate.h */,
 				8B8C67D423FA7A8C00F436B3 /* AppDelegate.m */,
 				8B8C67D623FA7A8C00F436B3 /* SceneDelegate.h */,
@@ -136,7 +152,7 @@
 			path = CodeCocoaChina;
 			sourceTree = "<group>";
 		};
-		8B8C67EC23FA857200F436B3 /* images */ = {
+		8B8C67EC23FA857200F436B3 /* Images */ = {
 			isa = PBXGroup;
 			children = (
 				8B8C681623FCE70600F436B3 /* yunEr1.jpg */,
@@ -150,7 +166,7 @@
 				8B8C67F323FA85C800F436B3 /* 4.JPG */,
 				8B8C67F523FA85D200F436B3 /* 5.JPG */,
 			);
-			path = images;
+			path = Images;
 			sourceTree = "<group>";
 		};
 		8B8C67F723FA874600F436B3 /* CCPageControl */ = {
@@ -232,6 +248,53 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		8B8C682623FFBD4800F436B3 /* GesturePasswordLogin */ = {
+			isa = PBXGroup;
+			children = (
+				8B8C682923FFBD8000F436B3 /* Controller */,
+				8B8C682823FFBD7700F436B3 /* View */,
+				8B8C682723FFBD6900F436B3 /* Model */,
+			);
+			path = GesturePasswordLogin;
+			sourceTree = "<group>";
+		};
+		8B8C682723FFBD6900F436B3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8B8C682823FFBD7700F436B3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8B8C682A23FFBDB500F436B3 /* GesturePassword.h */,
+				8B8C682B23FFBDB500F436B3 /* GesturePassword.m */,
+				8B8C682D23FFBE8700F436B3 /* GesturePasswordCell.h */,
+				8B8C682E23FFBE8700F436B3 /* GesturePasswordCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8B8C682923FFBD8000F436B3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8B8C683623FFC34300F436B3 /* GesturePasswordViewController.h */,
+				8B8C683723FFC34300F436B3 /* GesturePasswordViewController.m */,
+				8B8C683B24000A2800F436B3 /* LoginViewController.h */,
+				8B8C683C24000A2800F436B3 /* LoginViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8B8C6839240008DB00F436B3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8B8C683A2400090400F436B3 /* register_guide_video.mp4 */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		D277946F98FFD9732F028ACB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -300,6 +363,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B8C683E2400171F00F436B3 /* register_guide_video.mp4 in Resources */,
 				8B8C681D23FCE71900F436B3 /* yunEr4.jpg in Resources */,
 				8B8C681F23FCE71D00F436B3 /* yunEr5.jpg in Resources */,
 				8B8C680623FAAF4800F436B3 /* PageController.xib in Resources */,
@@ -368,11 +432,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B8C683823FFC34300F436B3 /* GesturePasswordViewController.m in Sources */,
 				8B8C680C23FBAE5F00F436B3 /* SegmentViewController.m in Sources */,
 				8B8C67FE23FAAD7C00F436B3 /* PageControllerCollectionViewCell.m in Sources */,
+				8B8C682C23FFBDB500F436B3 /* GesturePassword.m in Sources */,
+				8B8C683D24000A2800F436B3 /* LoginViewController.m in Sources */,
 				8B8C67D523FA7A8C00F436B3 /* AppDelegate.m in Sources */,
 				8B8C67E623FA7A9000F436B3 /* main.m in Sources */,
 				8B8C682223FD01FA00F436B3 /* FlowCollectionViewCell.m in Sources */,
+				8B8C682F23FFBE8700F436B3 /* GesturePasswordCell.m in Sources */,
 				8B8C680F23FBAF6200F436B3 /* SegmentControllerView.m in Sources */,
 				8B8C682523FE2A3E00F436B3 /* FlowChangeViewController.m in Sources */,
 				8B8C67D823FA7A8C00F436B3 /* SceneDelegate.m in Sources */,
